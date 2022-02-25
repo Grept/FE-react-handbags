@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
 
+// COMPONENTS
 import Button from "./components/Button";
 import Product from "./components/Product";
+import Tile from "./components/Tile";
 
-import theHandyBag from "./assets/bag_1.png"
-import theStylishBag from "./assets/bag_2.png"
-import theSimpleBag from "./assets/bag_3.png"
-import theTrendyBag from "./assets/bag_4.png"
-import brand from "./assets/brand.png"
-import ourStory from "./assets/our_story.png"
-
+// ASSETS
+import theHandyBag from "./assets/bag_1.png";
+import theStylishBag from "./assets/bag_2.png";
+import theSimpleBag from "./assets/bag_3.png";
+import theTrendyBag from "./assets/bag_4.png";
+import brand from "./assets/brand.png";
+import ourStory from "./assets/our_story.png";
 
 function App() {
     return (
@@ -49,34 +51,26 @@ function App() {
             </main>
 
             <footer>
-                <section>
-                    <h2>
-                        The Brand
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolores error fugit
-                        libero minus nam necessitatibus quam quas, quis quos sunt voluptate? Ad eaque fugit, iure minus
-                        omnis rerum.
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis itaque nulla quae
-                        reprehenderit. Assumenda autem consectetur cum dicta dolor, eius et hic, illo iusto nulla
-                        possimus tempora, tenetur veritatis voluptatibus.
+                <Tile title="The Brand">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum et, id nobis officia quae
+                        quibusdam temporibus! Ab, aliquam, aspernatur commodi ducimus eaque eum laudantium libero minima
+                        quos repudiandae sunt.
                     </p>
-                </section>
-                <section>
-                    <img src={brand} alt="The Brand"/>
-                </section>
-                <section>
-                    <img src={ourStory} alt="Our Story"/>
-                </section>
-                <section>
-                    <h2>Our Story</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cum cupiditate
-                        delectus dolorem enim pariatur quia sequi suscipit veritatis. Exercitationem, fugit laboriosam
-                        non nulla pariatur possimus. Animi, nostrum, vel.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, esse fuga incidunt laborum
+                        modi quibusdam rem sed soluta. Amet architecto dolorem fugit id illo iste laboriosam nesciunt
+                        nulla officia vero.
                     </p>
-                </section>
+                </Tile>
+                <Tile img={brand} title="The Brand"/>
+                <Tile img={ourStory} title="Our Story"/>
+                <Tile title="Our Story">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores at dignissimos,
+                        iure nobis nulla quos reiciendis saepe temporibus veritatis. Atque eligendi eos maiores minima,
+                        nulla qui totam ullam ut.
+                    </p>
+                </Tile>
             </footer>
         </>
     );

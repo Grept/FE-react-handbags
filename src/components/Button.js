@@ -1,15 +1,17 @@
 import React from "react";
 
 function Button({name, disabled}) {
-    return(
+    return (
         <>
-            <button onClick={() => {
-                console.log(name)
-            }} disabled={disabled}>
+            <button
+                onClick={() => {
+                    console.log(name)
+                }}
+                disabled={disabled}>
                 {name}
             </button>
         </>
-    )
+    );
 }
 
 export default Button;
